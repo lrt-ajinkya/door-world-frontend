@@ -101,6 +101,6 @@ export default {
     },
   },
   API: {
-    HOST: process.env.REACT_APP_API_URL || "http://localhost:3420",
+    HOST: process.env.REACT_APP_API_URL || "https://door-world-backend-production.up.railway.app",
   },
 };
