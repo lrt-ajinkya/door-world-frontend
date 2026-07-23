@@ -1,0 +1,22 @@
+import firebase from 'firebase/app';
+import 'firebase/analytics';
+import "firebase/firestore";
+import "firebase/storage";
+import "firebase/auth";
+
+const config = {
+  apiKey: "AIzaSyBnTJ1I5l_7v4JpjjAL_CQAazYrPlYJJQQ",
+  authDomain: "gerlock-8df4d.firebaseapp.com",
+  databaseURL: "https://gerlock-8df4d.firebaseio.com",
+  projectId: "gerlock-8df4d",
+  storageBucket: "gerlock-8df4d.appspot.com",
+  messagingSenderId: "571361017761",
+  appId: "1:571361017761:web:1295040918094a264f15e0",
+  measurementId: "G-ZFE01WZR67"
+};
+
+firebase.initializeApp(config);
+
+export const auth = firebase.auth()
+export const firestore = firebase.firestore()
+export const storage = firebase.storage()
